@@ -26,7 +26,7 @@ define hadoop_lib::jdbc(
       file { "${dest}/postgresql-jdbc.jar":
         ensure => 'link',
         links  => 'follow',
-        source => '/usr/share/java/postgresql.jar',
+        source => '/usr/share/java/postgresql-jdbc.jar',
       }
     }
     default: {}
